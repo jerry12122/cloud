@@ -14,12 +14,15 @@ public class Test {
 		String title = p2.getTitle();
 		ShoppingCart s1 = new ShoppingCart(c1);
 		s1.buy(new Product("Book","Java", 100));
-		s1.buy(new Product("Book","C++", 150));
+		s1.buy(p2);
+		
 		total = s1.getTotal();
 		c1.pay(20);
 		System.out.println("Hello " + c1.getName() + " your point is " + c1.getPoint());
 		c2.pay(20);
 		System.out.println("Hello " + c2.getName() + " your point is " + c2.getPoint());
 		System.out.println("Hello " + s1.getCustomer().getName() + " your cost is " + s1.getTotal());
+		s1.remove(p2);
+		c2.setVip(0);
 	}
 }

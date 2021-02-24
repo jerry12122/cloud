@@ -16,6 +16,9 @@ public class ShoppingCart{
     public void buy(Product p){
     	products.add(p);
     }
+    public void remove(Product p){
+    	products.remove(p);
+    }
     public int getTotal() {
     	Product p;
     	int total = 0;

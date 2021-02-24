@@ -22,6 +22,7 @@ public class Customer{
     public String getName(){return this._name;}
     public String getPasswd(){return this._passwd;}
     public int getVip(){return this._vip;}
+    public void setVip(int i){this._vip = i;}
     public int getPoint(){return this._point;}
     public void pay(int cost){
         if(this._vip == 1)
