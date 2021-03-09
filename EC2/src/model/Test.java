@@ -24,5 +24,7 @@ public class Test {
 		System.out.println("Hello " + s1.getCustomer().getName() + " your cost is " + s1.getTotal());
 		s1.remove(p2);
 		c2.setVip(0);
+		s1.searchPriceByTitle("Java");
+		s1.printAllProduct();
 	}
 }
